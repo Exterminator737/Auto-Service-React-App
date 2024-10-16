@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: rgba(0, 0, 0, 0.75);
+  --footer: rgba(0, 0, 0, 0.9);
+  --red: #d81324;
+  --light: #f2f2f2;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a.active {
+  display: block;
+  color: var(--red);
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  background-color: var(--red);
+  border: var(--red);
+}
+
+.slick-slide > div {
+  margin: 0px 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  opacity: 1; /* Firefox */
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
